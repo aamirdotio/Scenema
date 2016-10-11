@@ -1,0 +1,3 @@
+Echo Variable
+<?php echo $siteRoot ?>
+

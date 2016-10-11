@@ -1,0 +1,9 @@
+/*****WEB1 Main Stylesheet*****/
+html{
+	background-color: red;
+}
+
+.jumbotron{
+	background-color: #2E2D88;
+	color: white;
+}
