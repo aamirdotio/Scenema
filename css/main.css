@@ -1,6 +1,23 @@
 /*****WEB1 Main Stylesheet*****/
+body {
+	background-image: url("../img/bgPattern.png");
+	background-repeat: repeat;
 
+}
 
+.container {
+	background-color: #fff;
+	padding: 0;
+}
+
+nav > .container{
+	background-color: inherit;
+}
+
+.upContainer {
+	margin-top: -20px;
+	padding-top: 20px;
+}
 
 /*****HEADER*****/
 .logoImg{
@@ -15,6 +32,6 @@
 
 /******SLIDER****/
 #featuredSlider{
-	margin: -10px auto;
-	width: 100%;
+	margin-top: -9px;
+	
 }

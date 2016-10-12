@@ -1,0 +1,26 @@
+<?php 
+
+class DatabaseConnect {
+	public function __construct($db_host,$db_username,$db_password){
+		echo "Attempting Database Connection....";
+		if (!$this->Connect($db_host,$db_username,$db_password)) {
+			echo 'Connection failed';
+		}
+		else {
+			echo 'Connection Successful!';
+		}
+	}
+
+	public function Connect($db_host,$db_username,$db_password)	{
+		if (!mysql_connect($db_host,$db_username,$db_password)) {
+			return false;
+		}
+		else {
+			return true;
+		}
+	}
+}
+
+
+$Connection = new DatabaseConnect('localhost','root','');
+?>

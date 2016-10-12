@@ -29,11 +29,12 @@
 </head>
 <body>
 
-<div class="container"><!--open .container-->
-<div className="row">
+
 
 	<header>
 		<nav class="navbar navbar-inverse">
+		<div class="container"><!--open .container nav-->
+		<div className="row">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
@@ -73,8 +74,12 @@
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
+		  </div><!--close .container nav-->
+		  </div><!--close .row nav-->
 		</nav>
 	
 	</header>
+	<div class="container upContainer"><!--open .container-->
+	<div className="row">
 
 	

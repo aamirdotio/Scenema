@@ -7,7 +7,7 @@
 <!--SLIDER-->
 <?php include './resources/templates/featuredCarousel.inc.php'; ?>
 
-<span class="glyphicon glyphicon-search"></span>
+<div class="clearfix"></div>
 
 <div class="page-header"><!--open .page-header-->
 	<h1><?php echo $pageTitle ?>!</h1>
