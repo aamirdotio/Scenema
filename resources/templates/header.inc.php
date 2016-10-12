@@ -12,15 +12,24 @@
 	<title>Scenema: <?php echo $pageTitle ?></title>
 	<!--CDN Bootstrap CSS-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<!--CDN Bootstrap JS-->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<!--CDN jQuery JS-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<!--Bootstrap JS-->
+	<script src="<?php echo $siteRoot ?>/resources/library/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!--jQuery JS-->
+	<script src="<?php echo $siteRoot ?>/resources/library/jquery-3.1.1.min.js"></script>
 	<!--MAIN Stylesheet-->
 	<link rel="stylesheet" href="<?php echo $siteRoot ?>/css/main.css">
 	<!--CDN jQuery JS-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
+	<!--Carousel JS-->
+	<script>
+		// Load this when the DOM is ready
+		$(function(){
+		  // You used .myCarousel here. 
+		  // That's the class selector not the id selector,
+		  // which is #myCarousel
+		  $('#featuredCarousel').carousel();
+		});
+	</script
 </head>
 <body>
 
