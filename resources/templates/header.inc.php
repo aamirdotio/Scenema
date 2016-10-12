@@ -1,3 +1,6 @@
+<?php 
+	$siteRoot = '/ProjectX';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
