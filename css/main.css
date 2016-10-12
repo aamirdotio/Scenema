@@ -1,6 +1,11 @@
 /*****WEB1 Main Stylesheet*****/
-html{
-	background-color: red;
+
+
+
+/*****HEADER*****/
+.logoImg{
+	height: 3em;
+	padding-top: 1px;
 }
 
 .jumbotron{
