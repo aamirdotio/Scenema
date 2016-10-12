@@ -10,30 +10,27 @@
 	<!--Set Page width to size of device, and zoom level to 1-->
 	<meta name="viewport" content="width = device-width, initial-scale = 1">
 	<title>Scenema: <?php echo $pageTitle ?></title>
-	<!--CDN Bootstrap CSS-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<!--Bootstrap JS-->
-	<script src="<?php echo $siteRoot ?>/resources/library/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!--Bootstrap CSS-->
+	<link rel="stylesheet" href="<?php echo $siteRoot ?>/resources/library/bootstrap.min.css">
 	<!--jQuery JS-->
 	<script src="<?php echo $siteRoot ?>/resources/library/jquery-3.1.1.min.js"></script>
+	<!--Bootstrap JS-->
+	<script src="<?php echo $siteRoot ?>/resources/library/bootstrap.min.js"></script>
 	<!--MAIN Stylesheet-->
 	<link rel="stylesheet" href="<?php echo $siteRoot ?>/css/main.css">
-	<!--CDN jQuery JS-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<!--Carousel JS-->
+	<!--PgwSlider-->
+	<link rel="stylesheet" href="<?php echo $siteRoot ?>/resources/library/PgwSlider/pgwslider.css">
+	<script src="<?php echo $siteRoot ?>/resources/library/PgwSlider/pgwslider.js"></script>
 	<script>
-		// Load this when the DOM is ready
-		$(function(){
-		  // You used .myCarousel here. 
-		  // That's the class selector not the id selector,
-		  // which is #myCarousel
-		  $('#featuredCarousel').carousel();
+		$(document).ready(function() {
+	    	$('.pgwSlider').pgwSlider();
 		});
-	</script
+	</script>
 </head>
 <body>
 
-
+<div class="container"><!--open .container-->
+<div className="row">
 
 	<header>
 		<nav class="navbar navbar-inverse">
@@ -80,4 +77,4 @@
 	
 	</header>
 
-	<div class="container"><!--open .container-->
+	

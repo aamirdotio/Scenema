@@ -12,3 +12,9 @@
 	background-color: #2E2D88;
 	color: white;
 }
+
+/******SLIDER****/
+#featuredSlider{
+	margin: -10px auto;
+	width: 100%;
+}
