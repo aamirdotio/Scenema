@@ -79,7 +79,6 @@
 		</nav>
 	
 	</header>
-	<div class="container upContainer"><!--open .container-->
-	<div className="row">
+	
 
 	

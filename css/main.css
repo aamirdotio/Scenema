@@ -7,7 +7,7 @@ body {
 
 .container {
 	background-color: #fff;
-	padding: 0;
+	
 }
 
 nav > .container{
@@ -15,6 +15,7 @@ nav > .container{
 }
 
 .upContainer {
+	padding: 0;
 	margin-top: -20px;
 	padding-top: 20px;
 }
@@ -26,12 +27,26 @@ nav > .container{
 }
 
 .jumbotron{
-	background-color: #2E2D88;
+	background-color: #A0219C;
 	color: white;
 }
 
 /******SLIDER****/
 #featuredSlider{
-	margin-top: -9px;
+	margin-top: -8px;
 	
+}
+
+.expressBuy {
+	color: #fff;
+	margin-top: -26px;
+	margin-left: -16px;
+	margin-bottom: -14px;
+	background-color: #A0219C;
+	padding: 10px;
+}
+
+/*****Well*****/
+.pushWellDown {
+	margin-top: 14px;
 }
