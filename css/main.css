@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-	background-color: #fff;
+	background-color: rgba(255,255,255,0.7);
 	
 }
 
@@ -27,7 +27,7 @@ nav > .container{
 }
 
 .jumbotron{
-	background-color: #A0219C;
+	background-color: rgba(34,34,34,0.7);
 	color: white;
 }
 
@@ -49,4 +49,9 @@ nav > .container{
 /*****Well*****/
 .pushWellDown {
 	margin-top: 14px;
+}
+
+/*******FORM A******/
+.formA{
+	padding: 30px;
 }

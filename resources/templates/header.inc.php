@@ -51,7 +51,7 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
-		        <li class="<?php echo ($pageTitle == "Home" ? "active" : "")?>"><a href="<?php echo $siteRoot ?>/index.php">Home <?php echo ($pageTitle == "Home" ? '<span class="sr-only">(current)</span>' : "")?></a></li>
+		        <li class="<?php echo ($pageTitle == "Home" ? "active" : "")?>"><a href="<?php echo $siteRoot ?>/index.php"><span class="glyphicon glyphicon-home"></span> Home <?php echo ($pageTitle == "Home" ? '<span class="sr-only">(current)</span>' : "")?></a></li>
 		        <li class="<?php echo ($pageTitle == "Movies" ? "active" : "")?>"><a href="<?php echo $siteRoot ?>/pages/movies.php">Movies<?php echo ($pageTitle == "Movies" ? '<span class="sr-only">(current)</span>' : "")?></a></li>
 		        <li class="<?php echo ($pageTitle == "Offers" ? "active" : "")?>"><a href="<?php echo $siteRoot ?>/pages/offers.php">Offers<?php echo ($pageTitle == "Offers" ? '<span class="sr-only">(current)</span>' : "")?></a></li>
 		        <li class="<?php echo ($pageTitle == "S-Squad" ? "active" : "")?>"><a href="<?php echo $siteRoot ?>/pages/ssquad.php">S-Squad<?php echo ($pageTitle == "S-Squad" ? '<span class="sr-only">(current)</span>' : "")?></a></li>

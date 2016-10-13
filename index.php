@@ -15,19 +15,30 @@
 <!--Well-->
 
 <div class="well well-md pushWellDown">
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum impedit nemo repellat sit ipsam perferendis. Deserunt, vitae dicta iusto distinctio quaerat a cupiditate consectetur illum exercitationem officia iste nostrum explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ea culpa rem fugiat necessitatibus unde quasi! Doloremque facere praesentium consequuntur deserunt tempore incidunt ipsa, autem veniam, reprehenderit cumque sapiente mollitia.
+	<!--Express Purchase-->
+	<div class="page-header col-lg-3 col-md-3 col-sm-6 col-xs-12"><!--open .page-header-->
+		<h3 class="expressBuy"><b>Express Purchase<b></h2>
+	</div><!--close .page-header-->	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum impedit nemo repellat sit ipsam perferendis. Deserunt, vitae dicta iusto distinctio quaerat a cupiditate consectetur illum exercitationem officia iste nostrum explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ea culpa rem fugiat necessitatibus unde quasi! Doloremque facere praesentium consequuntur deserunt tempore incidunt ipsa, autem veniam, reprehenderit cumque sapiente mollitia.</p>
 </div>
 
-<!--Express Purchase-->
-<div class="page-header col-lg-3"><!--open .page-header-->
-	<h3 class="expressBuy"><b>Express Purchase<b></h2>
-</div><!--close .page-header-->	
+
 <div class="clearfix"></div>
 
 <!--Jumbotron-->
 <div class="jumbotron"><!--open .jumbotron-->
-	
+	<!--Express Purchase-->
+	<div class="page-header col-lg-3 col-md-3 col-sm-6 col-xs-12"><!--open .page-header-->
+		<h3 class="expressBuy"><b>Express Purchase<b></h2>
+	</div><!--close .page-header-->	
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus fuga quaerat, eius impedit magnam, tenetur nostrum et, quis eligendi iste, ratione possimus ad doloremque atque accusantium sit nisi distinctio dolore.</p>
+
+	<div class="input-group input-group-lg"><!--open inputGroup-->
+		<input type="text" class="form-control" placeholder="Enter Email Address">
+		<span class="input-group-btn">
+			<button class="btn btn-default">Subscribe</button>
+		</span>
+	</div><!--close inputGroup-->
 
 </div><!--close .jumbotron-->
 
