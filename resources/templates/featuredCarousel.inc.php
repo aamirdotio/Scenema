@@ -6,24 +6,24 @@
 
 	<ul class="pgwSlider">
 	    <li><!--open featuredMovie-->
-	    	<a href="http://www.nyc.gov" target="_blank">
-	    		<img src="<?php echo $siteRoot ?>/img/featured/kubo.jpg" alt="Kubo" data-description="Eiffel Tower and Champ de Mars">
-	    	</a>
+	    	
+	    		<img src="<?php echo $siteRoot ?>/img/featured/kubo.jpg" alt="Kubo" >
+	    	
 	    </li><!--close featuredMovie-->
 	    <li><!--open featuredMovie-->
-	    	<a href="http://www.nyc.gov" target="_blank">
-	    		<img src="<?php echo $siteRoot ?>/img/featured/captain.jpg" alt="Captain America" data-description="Eiffel Tower and Champ de Mars">
-	    	</a>
+	    	
+	    		<img src="<?php echo $siteRoot ?>/img/featured/captain.jpg" alt="Captain America" >
+	    	
 	    </li>
 	    <li><!--open featuredMovie-->
-	    	<a href="http://www.nyc.gov" target="_blank">
-	    		<img src="<?php echo $siteRoot ?>/img/featured/magni.jpg" alt="Magnificent 7" data-description="Eiffel Tower and Champ de Mars">
-	    	</a>
+	    	
+	    		<img src="<?php echo $siteRoot ?>/img/featured/magni.jpg" alt="Magnificent 7" >
+	    	
 	    </li><!--close featuredMovie-->
 	    <li><!--open featuredMovie-->
-	    	<a href="http://www.nyc.gov" target="_blank">
-	    		<img src="<?php echo $siteRoot ?>/img/featured/captain2.jpg" alt="Civil War" data-description="Eiffel Tower and Champ de Mars">
-	    	</a>
+	    	
+	    		<img src="<?php echo $siteRoot ?>/img/featured/ft_deadpool.jpg" alt="Deadpool" >
+	    	
 	    </li><!--close featuredMovie-->
 
 	</ul>

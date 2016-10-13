@@ -21,6 +21,8 @@
 	<!--PgwSlider-->
 	<link rel="stylesheet" href="<?php echo $siteRoot ?>/resources/library/PgwSlider/pgwslider.css">
 	<script src="<?php echo $siteRoot ?>/resources/library/PgwSlider/pgwslider.js"></script>
+	<!--Validation JS-->
+	<script src="<?php echo $siteRoot ?>/js/validation.js"></script>
 	<script>
 		$(document).ready(function() {
 	    	$('.pgwSlider').pgwSlider();
@@ -60,11 +62,11 @@
 		      </ul>
 		      
 		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="#">Link</a></li>
+		        <li><a href="<?php echo $siteRoot ?>/admin/login.php">Log In</a></li>
 		        <li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-		          <ul class="dropdown-menu">
-		            <li><a href="#">Action</a></li>
+		          <ul class="dropdown-menu" >
+		            <li><a href="#">Add Movie</a></li>
 		            <li><a href="#">Another action</a></li>
 		            <li><a href="#">Something else here</a></li>
 		            <li role="separator" class="divider"></li>

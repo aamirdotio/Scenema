@@ -2,11 +2,48 @@
 	$pageTitle = 'Add Movie';
 	require_once '../resources/templates/header.inc.php';
 	
+	session_start();
+	if (!isset($_SESSION['User_ID'])) {
+ 		header("Location: login.php");
+	}
+	
 	if (! empty($_POST)) {
 			
 		
 		//Connect to DB
-		require_once '../resources/scripts/ConnectDB.php';
+		$host = 'studmysql01.fhict.local';
+		$database = 'dbi356141';
+		$dsn = 'mysql:host=$host;dbname=$database; charset=utf8';
+		$username = 'dbi356141';
+		$password = '05940613';
+
+		$message = '';
+
+		// Create connection
+		$mysqli = new mysqli($host, $username, $password,$database);
+
+		// Check connection
+		if ($mysqli->connect_error) {
+		    die("Connection failed: " . $mysqli->connect_error);
+		} 
+
+		//$host = 'localhost';
+		//$database = 'scenema';
+		//$dsn = 'mysql:host=$host;dbname=$database; charset=utf8';
+		//$username = 'root';
+		//$password = '';
+
+		//$message = '';
+
+		// Create connection
+		//$mysqli = new mysqli($host, $username, $password,$database);
+
+
+
+		// Check connection
+		//if ($mysqli->connect_error) {
+		//    die("Connection failed: " . $mysqli->connect_error);
+		//} 
 
 		//Insert our data
 
@@ -38,7 +75,7 @@
 ?>
 <div class="container upContainer"><!--open container-->
 <div class="row">
-	<form class="formA col-lg-12 col-lg-offset-3" method="post" action="">
+	<form name="addMovie" class="formA col-lg-12 col-lg-offset-3" method="post" action="./addMovie.php">
 		<span class="col-lg-5"><h1 class="text-center">Add Movie</h1></span>
 
 		<div class="clearfix"></div>
@@ -65,16 +102,31 @@
 		        <option value="3">Crime</option>
 		        <option value="4">Drama</option>
 		        <option value="5">Documentary</option>
+		        <option value="6">Fantasy</option>
+		        <option value="7">Fiction</option>
+		        <option value="8">Horror</option>
+		        <option value="9">Mystery</option>
+		        <option value="10">Romance</option>
+		        <option value="11">Sci-fi</option>
+		        <option value="12">Thriller</option>
 		      </select>
 		</div><br>
 		<div class="input-group input-group-lg col-lg-3">
 			 <label for="genre_id2">Genre B:</label>
 		      <select class="form-control" id="genre_id2" name="genre_id2">
+		        <option value=""></option>
 		        <option value="1">Action</option>
 		        <option value="2">Comedy</option>
 		        <option value="3">Crime</option>
 		        <option value="4">Drama</option>
 		        <option value="5">Documentary</option>
+		        <option value="6">Fantasy</option>
+		        <option value="7">Fiction</option>
+		        <option value="8">Horror</option>
+		        <option value="9">Mystery</option>
+		        <option value="10">Romance</option>
+		        <option value="11">Sci-fi</option>
+		        <option value="12">Thriller</option>
 		      </select>
 		</div><br>
 		<div class="input-group input-group-lg col-lg-3">

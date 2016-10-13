@@ -1,6 +1,5 @@
 <?php
 	$pageTitle = 'S-Squad';
-	$siteRoot = '/ProjectX';
 	require_once '../resources/templates/header.inc.php';
 ?>
 
