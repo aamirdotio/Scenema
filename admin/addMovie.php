@@ -1,7 +1,40 @@
 <?php
 	$pageTitle = 'Add Movie';
 	require_once '../resources/templates/header.inc.php';
+	
+	if (! empty($_POST)) {
+			
+		
+		//Connect to DB
+		require_once '../resources/scripts/ConnectDB.php';
 
+		//Insert our data
+
+		$title = $_POST['title'];
+		$year = $_POST['year'];
+		$duration = $_POST['duration'];
+		$director = $_POST['director'];
+		$contentRating_id = $_POST['contentRating_id'];
+		$synopsis = $_POST['synopsis'];
+		$genre_id = $_POST['genre_id'];
+		$genre_id2 = $_POST['genre_id2'];
+		$posterPath = $_POST['posterPath'];
+
+		$sql = "INSERT INTO `movie` (`title`, `year`, `duration`, `director`, `contentRating_id`, `synopsis`, `genre_id`, `genre_id2`, `posterPath`) VALUES ('{$title}', '{$year}', '{$duration}', '{$director}', '{$contentRating_id}', '{$synopsis}', '{$genre_id}', '{$genre_id2}', '{$posterPath}');";
+
+		$insert = $mysqli->query($sql);
+
+		//Print response from MySQL 
+		if ($insert) {
+			echo "Success! Row ID: {$mysqli->insert_id}";
+		} else {
+			die("Error: {$mysqli->errno} : {$mysqli->error}");
+		}
+
+		//Close our connection
+		$mysqli->close();
+
+	} //end if !empty POST
 ?>
 <div class="container upContainer"><!--open container-->
 <div class="row">
@@ -15,14 +48,14 @@
 		  <input type="text" class="form-control" name="title" aria-describedby="sizing-addon1">
 		</div><br>
 		<div class="input-group input-group-lg col-lg-5">
-		  <span class="input-group-addon" id="sizing-addon1">Director</span>
+		  <span class="input-group-addon" id="sizing-addon2">Director</span>
 		  <input type="text" class="form-control" name="director" aria-describedby="sizing-addon1">
 		</div><br>
 		<div class="input-group input-group-lg col-lg-5">
-		  <span class="input-group-addon" id="sizing-addon1">Year</span>
+		  <span class="input-group-addon" id="sizing-addon3">Year</span>
 		  <input type="text" class="form-control" name="year" aria-describedby="sizing-addon1">
-		  <span class="input-group-addon" id="sizing-addon1">Duration</span>
-		  <input type="text" class="form-control" name="duration" aria-describedby="sizing-addon1">
+		  <span class="input-group-addon" id="sizing-addon4">Duration</span>
+		  <input type="text" class="form-control" name="duration" aria-describedby="sizing-addon5">
 		</div><br>
 		<div class="input-group input-group-lg col-lg-3">
 			 <label for="genre_id">Genre A:</label>
@@ -60,8 +93,8 @@
     	</div><br>
     	<div class="clearfix"></div>
 		<div class="input-group input-group-lg col-lg-3">
-		  <span class="input-group-addon" id="sizing-addon1">Poster</span>
-		  <input type="text" class="form-control" name="posterPath" aria-describedby="sizing-addon1">
+		  <span class="input-group-addon" id="sizing-addon6">Poster</span>
+		  <input type="text" class="form-control" name="posterPath" aria-describedby="sizing-addon7">
 		</div><br>
 		<div class="clearfix"></div>
 		<input class="btn btn-lg btn-success col-lg-5" type="submit" value="Add Movie">

@@ -1,5 +1,5 @@
 <?php 
-	$siteRoot = '/ProjectX';
+	$siteRoot = '';
 ?>
 <!DOCTYPE html>
 <html lang="en">
